@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title><Colgate Coders></title>
+    <link rel="icon" type="image/png" href="favicon.png"/>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <link href="cover.css" rel="stylesheet">
+    <style type="text/css">
+    .tg  {border-collapse:collapse;border-spacing:0;}
+    .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:white;}
+    .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:white;}
+    .tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+  </head>
+
+  <body>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <nav>
+                  <ul class="nav masthead-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="instructions.html">Level 0</a></li>
+                    <li><a href="cupcakes18.html">Cupcakes 18</a></li>
+                    <li><a href="cupcakes19.html">Cupcakes 19</a></li>
+                  </ul>
+              </nav>
+            </div>
+          </div>
+          <br><br><br><br>
+          <div class="inner cover" style="width:100%;">
+
+
+             <h5>PROBLEM 0 (10 points): WARM UP </h5>
+             <p >
+
+                 There are 12 black and 12 white socks in a drawer. You are blindfolded and need to pick a pair that has the same color.
+                 What is the least number of  socks that would guarentee a matching pair?
+
+             </p>
+
+             <h5>PROBLEM 1 (30 points): First Knight</h5>
+             <p >
+
+                 Given an nxn chessboard, you're tasked with finding the minimum number of movees the knight would require to reach a given sqaure (x,y)
+                from the bottom-left square (1,1). Knight moves 2 squares in one direction and 1 square in another. Here's a demonstration. (NOTE: There aren't any other pieces on the board)
+                <br>
+                <p class="btn btn-default">
+                    Input Format: The first line consists of 3<br>
+                    space-separated integers n, x and y where n represents<br>
+                    the dimension of the board(nxn), x represents the <br>
+                    column (1 being the left-most) and y represents the row<br>
+                    (1 being the lower-most). <br>
+                    Output Format: One integer denoting the minimum<br> number of moves required to reach given destination.</p>
+                    <br>
+                    <p class="btn btn-default">
+                        Sample Input<br>
+                        8 3 2</p>
+                    <br>
+                    <p class="btn btn-default">
+                        Output<br>
+                        1</p>
+                <br><br>
+                <img src="Knightmove.png"/>
+                <br><br>
+
+            <table class="tg" align="center">
+                <tr>
+                    <th class="tg-0lax"><b>Small Inputs</b></th>
+                    <th class="tg-0lax"><b>Small Outputs</b></th>
+                    <th class="tg-0lax"><b>Large Inputs</b></th>
+                    <th class="tg-0lax"><b>Large Outputs</b></th>
+                </tr>
+                <tr>
+                    <td class="tg-0lax"><a href="cupcakes19/small1_1.in" download>For 5 points</a></td>
+                    <td class="tg-0lax"><a href="cupcakes19/small1_1.out" download>Check here</a></td>
+                    <td class="tg-0lax"><a href="cupcakes19/large1_1.in" download>For 10 points</a></td>
+                    <td class="tg-0lax"><a href="cupcakes19/large1_1.out" download>Check here</a></td>
+                </tr>
+                <tr>
+                    <td class="tg-0lax"><a href="cupcakes19/small1_2.in" download>For 5 more</a></td>
+                    <td class="tg-0lax"><a href="cupcakes19/small1_2.out" download>Check here</a></td>
+                    <td class="tg-0lax"><a href="cupcakes19/large1_2.in" download>For 10 more</a></td>
+                    <td class="tg-0lax"><a href="cupcakes19/large1_2.out" download>Check here</a></td>
+                </tr>
+
+            </table>
+
+             </p>
+
+<br>
+
+             <h5>PROBLEM 3 (40 points): Largest Value </h5>
+             <p>
+                 Here's a sequence of unique integers : {1,2,3,4}
+                 <br>Here's what you can do : Perform 1 swap<br> of two numbers.
+                 What's the largest lexicographical value you can turn this into?
+                 <br><b>{4,2,3,1}</b><br>
+                 <br>
+                 For this problem, you're given space-separated a sequence of unique integers from 1 to n and a maximum number <br>of swaps you may make. Figure out the lexicographical value.
+                 <p class="btn btn-default">
+                     Input Format: The first line consists of the <br>number of the space separated integers.<br> The second line contains one integer denoting the<br> maximum number of swaps you may perform<br> </p>
+                     <br>
+                     <p class="btn btn-default">
+                         Sample Input<br>
+                         1 2 3 4 <br>1 <br></p>
+                     <br>
+                     <p class="btn btn-default">
+                         Output<br>
+                         4 2 3 1</p>
+                 <br><br>
+                 <table class="tg" align="center">
+                     <tr>
+                         <th class="tg-0lax"><b>Small Inputs</b></th>
+                         <th class="tg-0lax"><b>Small Outputs</b></th>
+                         <th class="tg-0lax"><b>Large Inputs</b></th>
+                         <th class="tg-0lax"><b>Large Outputs</b></th>
+                     </tr>
+                     <tr>
+                         <td class="tg-0lax"><a href="cupcakes19/small2_1.in" download>For 5 points</a></td>
+                         <td class="tg-0lax"><a href="cupcakes19/small2_1.out" download>Check here</a></td>
+                         <td class="tg-0lax"><a href="cupcakes19/large2_1.in" download>For 10 points</a></td>
+                         <td class="tg-0lax"><a href="cupcakes19/large2_1.out" download>Check here</a></td>
+                     </tr>
+                     <tr>
+                         <td class="tg-0lax"><a href="cupcakes19/small2_2.in" download>For 5 more</a></td>
+                         <td class="tg-0lax"><a href="cupcakes19/small2_2.out" download>Check here</a></td>
+                         <td class="tg-0lax"><a href="cupcakes19/large2_2.in" download>For 10 more</a></td>
+                         <td class="tg-0lax"><a href="cupcakes19/large2_2.out" download>Check here</a></td>
+                     </tr>
+
+                 </table>                 <br><br>
+
+
+
+             </p>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+    <br>
+
+  </body>
+</html>
